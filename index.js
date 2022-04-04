@@ -1,3 +1,30 @@
+const tl = new TimelineMax()
+
+tl.from('#myVideo', 1, {
+    delay: 1,
+    opacity: 0,
+    y: '100%'
+})
+
+tl.from('#head', 1.5, {
+    opacity: 0,
+    y: -50
+})
+
+tl.from('#title', 1.5, {
+    opacity: 0,
+    x: 100,
+    ease: "power2.out"
+})
+
+gsap.from('#main', 2, {
+    delay: 2, 
+    opacity: 0,
+    y:100
+}) 
+
+
+
 const btnCalculate = document.querySelector('#btnCalculate');
 btnCalculate.addEventListener ('click', calculateBMR);
 function calculateBMR(e) {
