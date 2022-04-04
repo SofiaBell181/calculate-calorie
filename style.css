@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+#head {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(225deg, rgba(86, 87, 90, 0.9) 0%, rgba(23, 18, 70, 0.5) 100%);
+    align-items: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 130px;
+}
+
+#title {
+    border: 1px solid black;
+    border-radius: 30% 0 30% 0;
+    background: #fff;
+    color: #000;
+    mix-blend-mode: screen;
+    width: 300px;
+    align-self: center;
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.par {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 19px 50px rgba(0, 0, 0, 0.8);
+    background: rgba(85, 85, 85, 0.603);
+    width: 300px;
+    height: 380px;
+    padding: 20px;
+}
+
+form p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 2px;
+    color: #fff;
+    letter-spacing: 0.1rem;
+}
+
+input {
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#age, #height, #weight {
+    border: 0;
+    padding: 7px;
+    width: 95%;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+select {
+    border: 0;
+    padding: 7px;
+    width: 100%;
+    font-size: 15px;
+}
+
+option {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+#btnCalculate{
+    align-self: center;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 15px 0;
+    color: rgb(55, 60, 136);
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+#btnCalculate:hover{
+    background: rgb(55, 60, 136);
+    border:none;
+    color: #fff;
+    box-shadow: 0 0 5px rgb(55, 60, 136),
+                0 0 25px rgb(55, 60, 136),
+                0 0 50px rgb(55, 60, 136),
+                0 0 200px rgb(55, 60, 136);
+}
+
+.card, .card2{
+    position: relative;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.inner{
+    width: 330px;
+    height: 211px;
+    transition: 0.5s;
+    position: relative;
+    background: rgb(55, 60, 136);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(5px);
+}
+
+.parResult {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.inner1{
+    width: 330px;
+    height: 211px;
+    transition: 0.5s;
+    position: relative;
+    background: rgb(85, 85, 85);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(110px);
+}
+
+.card2:hover .inner1{
+    background: rgb(55, 60, 136);
+    transform: translateY(0);
+}
+
+.content2{
+    opacity: 0.2;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.card2:hover .content2{
+    opacity: 1;
+}
+
+.photo {
+    width: 45px;
+    background-color: transparent;
+}
+
+h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 100;
+    line-height: 25px;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.inner2{
+    width: 330px;
+    height: 210px;
+    padding: 5px 5px 5px 0;
+    transition: 0.5s;
+    background: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 19px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.card2:hover .inner2 {
+    transform: translateY(0);
+}
+
+.par2{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-align: left;
+}
+
+#showResult {
+    font-size: 25px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(225deg, rgba(86, 87, 90, 0.9) 0%, rgba(23, 18, 70, 0.5) 100%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.par_footer {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+@media all and (max-width: 500px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    #head {
+        padding: 20px;
+    }
+
+    #container {
+        padding: 10px 40px;
+    }
+
+    .par {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    form {
+        width: 290px;
+        height: 360px;
+    }
+
+    form p {
+        font-size: 16px;
+    }
+
+    select {
+        font-size: 13px;
+    }
+
+    option {
+        font-size: 11px;
+    }
+
+    input {
+        font-size: 13px;
+    }
+    
+    #btnCalculate{
+        font-size: 15px;
+    }
+
+    .card{
+        margin-top: 50px;
+    }
+
+    .card2 {
+        margin-top: 20px;
+    }
+
+    .card, .card2{
+        margin-left: 0;
+    }
+
+    .inner, .inner1, .inner2{
+        width: 300px;
+        height: 200px;
+    }
+
+    .inner1 {
+        transform: translateY(100px);
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    .par2 {
+        font-size: 13px;
+    }
+
+    .parResult {
+        font-size: 20px;
+    }
+}

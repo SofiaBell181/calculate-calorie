@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CALORIE CALCULATOR</title>
+      <link rel="icon" href="data:,">
+      <link rel="icon" href="icon-modified.png">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+         <source src="Pexels Videos 3503.mp4" type="video/mp4">
+      </video>
+      <div id='head'>
+         <h1>Calorie calculator</h1>
+      </div>
+      <div id="container">
+         <div id="title">
+            <h2>MIFFLIN-ST JEOR FORMULA</h2>
+         </div>
+         <p class="par">The Basal Metabolic Rate (BMR) Calculator estimates your basal metabolic rate—the amount of energy expended while at rest in a neutrally temperate environment, and in a post-absorptive state (meaning that the digestive system is inactive, which requires about 12 hours of fasting).</p>
+      </div>
+      <div id="main">
+         <form>
+            <p>Gender</p>
+            <span>
+            <label><input id="female" name="gender" checked type="radio">Female</label>
+            <label><input id="male" name="gender" type="radio">Male</label>
+            </span>
+            <p>Age</p>
+            <input type="text" id="age" placeholder="years">
+            <p>Height </p>
+            <input type="text" id="height" placeholder="cm">
+            <p>Weight</p>
+            <input type="text" id="weight" placeholder="kg">
+            <p>Activity Level, calorie</p>
+            <select id="activity">
+               <option disabled>Select an option</option>
+               <option selected value="1.926">Sedentary: little or no exercise</option>
+               <option value="2.207">Exercise 1-3 times/week</option>
+               <option value="2.351">Exercise 4-5 times/week</option>
+               <option value="2.488">Daily exercise or intense exercise 3-4 times/week</option>
+               <option value="2.769">Intense exercise 6-7 times/week</option>
+               <option value="3.050">Very intense exercise daily, or physical job</option>
+            </select>
+            <button id="btnCalculate">CALCULATE</button>
+         </form>
+         <div class="card">
+            <div class="inner">
+               <div class="content">
+                  <p class="parResult">BMR = <span id="showResult"></span> calories/day</p>
+                  <h3>Result</h3>
+               </div>
+            </div>
+         </div>
+         <div class="card2">
+            <div class="inner1">
+               <div class="content2">
+                  <img class="photo" src="view-details.png" alt="View details">
+                  <h3>Description <br> of activities</h3>
+               </div>
+            </div>
+            <div class="inner2">
+               <div class="content2">
+                  <ul>
+                     <li class="par2">Exercise: 15-30 minutes of elevated heart rate activity.</li>
+                     <li class="par2">Intense exercise: 45-120 minutes of elevated heart rate activity.</li>
+                     <li class="par2">Very intense exercise: 2+ hours of elevated heart rate activity.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="card2">
+            <div class="inner1">
+               <div class="content2">
+                  <img src="analysis.png" width="58px"  alt="Analysis">
+                  <h3>Interpretation</h3>
+               </div>
+            </div>
+            <div class="inner2">
+               <div class="content2">
+                  <ul>
+                     <li class="par2">Recommended rate of dietary calorie loss: 250-500 kcal per day.</li>
+                     <li class="par2">It is not recommended to consume less than 1,200 kcal per day for women and 1,400 kcal for men</li>
+                     <li class="par2">This can lead to micro- and macronutrient deficiency, arrhythmias, gout development, bile-mediated disease, reduced muscle mass.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="footer">
+        <p class="par_footer">Developed by Sofia Beloborodtseva</p>
+     </div>
+     
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="index.js"></script>
+   </body>
+</html>
